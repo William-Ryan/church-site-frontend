@@ -43,13 +43,14 @@ export default function Navigation() {
           onChange={handleChange}
           aria-label="nav tabs example"
           indicatorColor="secondary"
+          centered
         >
-          <LinkTab label="HOME"><Link to="/"></Link></LinkTab>
-          <LinkTab label="ABOUT US"><Link to=""></Link></LinkTab>
-          <LinkTab label="LIVE STREAM"><Link to=""></Link></LinkTab>
-          <LinkTab label="MEDIA"><Link to=""></Link></LinkTab>
-          <LinkTab label="EVENTS"><Link to=""></Link></LinkTab>
-          <LinkTab label="CONTACT"><Link to=""></Link></LinkTab>
+          <Tab label="HOME" component={Link} to="/" />
+          <Tab label="ABOUT US" component={Link} to="/about" />
+          <Tab label="LIVE STREAM" component={Link} to="/stream" />
+          <Tab label="MEDIA" component={Link} to="/media" />
+          <Tab label="EVENTS" component={Link} to="/events" />
+          <Tab label="CONTACT" component={Link} to="/contact" />
         </Tabs>
       </AppBar>
     </div>
