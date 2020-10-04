@@ -4,6 +4,10 @@ import { Route, Switch } from "react-router-dom"
 import Navigation from "./Components/Navigation.jsx"
 import Home from "./Components/Home.jsx"
 import About from "./Components/About.jsx"
+import Stream from "./Components/Stream.jsx"
+import Media from "./Components/Media.jsx"
+import Events from "./Components/Events.jsx"
+import Contact from "./Components/Contact.jsx"
 
 import { makeStyles } from '@material-ui/core/styles';
 import Paper from '@material-ui/core/Paper';
@@ -15,10 +19,10 @@ function App() {
       <Switch>
         <Route exact path='/' component={Home}/>
         <Route exact path='/about' component={About}/>
-        <Route exact path='/stream'/>
-        <Route exact path='/media'/>
-        <Route exact path='/events'/>
-        <Route exact path='/contact'/>
+        <Route exact path='/stream' component={Stream}/>
+        <Route exact path='/media' component={Media}/>
+        <Route exact path='/events' component={Events}/>
+        <Route exact path='/contact' component={Contact}/>
       </Switch>
     </div>
   );
