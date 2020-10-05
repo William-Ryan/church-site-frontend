@@ -1,23 +1,9 @@
 import React from "react"
 import {Link} from "react-router-dom"
-import PropTypes from 'prop-types'
 import { makeStyles } from '@material-ui/core/styles';
 import AppBar from '@material-ui/core/AppBar';
 import Tabs from '@material-ui/core/Tabs';
 import Tab from '@material-ui/core/Tab';
-import Typography from '@material-ui/core/Typography';
-import Box from '@material-ui/core/Box';
-
-function LinkTab(props) {
-  return (
-    <Tab
-      onClick={(event) => {
-        event.preventDefault();
-      }}
-      {...props}
-    />
-  );
-}
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -41,9 +27,9 @@ export default function Navigation() {
           variant="fullWidth"
           value={value}
           onChange={handleChange}
-          aria-label="nav tabs example"
+          aria-label="nav tabs"
           indicatorColor="secondary"
-          centered
+          centered={true}
         >
           <Tab label="HOME" component={Link} to="/" />
           <Tab label="ABOUT US" component={Link} to="/about" />

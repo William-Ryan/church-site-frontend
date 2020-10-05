@@ -37,18 +37,12 @@ const Home = () => {
         <ThemeProvider theme={theme}>
             <div theme={theme}>
                 <div>
-                <Typography variant={"h1"}>
-                    Star Of Hope Chapel
-                </Typography>
-                <Typography variant={"body1"}>
-                    Hello, Brothers and Sisters. Our loving church has recently celebrated 50 years together in fellowship with our Lord God. We are blessed to have our church family to gather together and spread the good word!
-                </Typography>
-                <Typography variant={"body1"}>
-                Mark 10:9: Therefore what God has joined together, let no one separate.
-                </Typography>
-                </div>
-                <div>
-                    {/* <img className={classes.profile} src={require('')} alt="site owner William"></img> */}
+                    <Typography variant={"body1"}>
+                        Hello, Brothers and Sisters. Our loving church has recently celebrated 50 years together in fellowship with our Lord God. We are blessed to have our church family to gather together and spread the good word!
+                    </Typography>
+                    <Typography variant={"body1"}>
+                        Mark 10:9: Therefore what God has joined together, let no one separate.
+                    </Typography>
                 </div>
             </div>
         </ThemeProvider>

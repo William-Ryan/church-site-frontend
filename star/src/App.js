@@ -1,6 +1,7 @@
 import React from 'react';
 import { Route, Switch } from "react-router-dom"
 
+import TitleBar from "./Components/TitleBar.jsx"
 import Navigation from "./Components/Navigation.jsx"
 import Home from "./Components/Home.jsx"
 import About from "./Components/About.jsx"
@@ -15,7 +16,8 @@ import Paper from '@material-ui/core/Paper';
 function App() {
   return (
     <div className="App">
-      <Navigation/>
+      <TitleBar />
+      <Navigation />
       <Switch>
         <Route exact path='/' component={Home}/>
         <Route exact path='/about' component={About}/>
