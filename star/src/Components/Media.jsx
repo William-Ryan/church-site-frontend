@@ -6,9 +6,7 @@ import { makeStyles } from '@material-ui/core/styles';
 const Media = () => {
     return (
         <div>
-            <Typography>
-                MEDIA PAGE
-            </Typography>
+            <Typography variant={"h3"}>Media Page</Typography>
         </div>
     )
 }

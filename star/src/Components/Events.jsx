@@ -6,9 +6,7 @@ import { makeStyles } from '@material-ui/core/styles';
 const Events = () => {
     return (
         <div>
-            <Typography>
-                EVENTS PAGE
-            </Typography>
+            <Typography variant={"h3"}>Events Page</Typography>
         </div>
     )
 }
