@@ -3,13 +3,18 @@ import {CloudinaryContext, Image, Transformation} from 'cloudinary-react';
 
 import Typography from '@mui/material/Typography';
 
+import styled from '@emotion/styled'
+
+const Img = styled.img`
+    width: 15%`
+
 const TitleBar = () => {
     return (
         <div>
             <div>
-            <CloudinaryContext cloudName="snap-globe">
-                <Image publicId="Church-Media/Church_Symbol" format="jpg"/>
-            </CloudinaryContext>
+                <Img 
+                src="https://scontent-lga3-2.xx.fbcdn.net/v/t39.30808-6/308787210_457577689737886_6832976261704682608_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=IcmQKIGaQmIAX9yUSMP&_nc_ht=scontent-lga3-2.xx&oh=00_AT--JjGLTckMkTwGuV7cV5QXgcI7LsrGCTMEE_jG6RpEXQ&oe=633D5E96"
+                alt="Star with middle cross"/>
             </div>
             <Typography variant={"h1"}>
                 Star Of Hope Chapel

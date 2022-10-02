@@ -33,7 +33,7 @@ const Home = () => {
                     </Typography>
                     <Button>Meet Our Members</Button>
                 </div>
-                <div>
+                {/* <div>
                     <Typography variant={"h4"}>
                         Church Media
                     </Typography>
@@ -41,13 +41,13 @@ const Home = () => {
                         Media of different church events ^
                     </Typography>
                     <Button>Church Memories</Button>
-                </div>
+                </div> */}
                 <div>
                     <Typography variant={"h4"}>
                         Contact Us
                     </Typography>
                     <Typography>
-                        If you need our location or wish to get in touch with us click <Link to="/contact">here</Link> for information!
+                        If you need our location or wish to get in touch with us click the contact tab for information!
                     </Typography>
                 </div>
             </div>
