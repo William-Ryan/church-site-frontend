@@ -22,9 +22,9 @@ export default function Navigation() {
           aria-label="nav tabs"
           indicatorColor="primary"
           centered={true}
-          backgroundColor="yellowgreen"
+          style={{ backgroundColor: "yellowgreen"}}
         >
-          <Tab label="HOME" component={Link} to="/" />
+          <Tab  label="HOME" component={Link} to="/" />
           <Tab label="ABOUT US" component={Link} to="/about" />
           {/* <Tab label="LIVE STREAM" component={Link} to="/stream" /> */}
           {/* <Tab label="MEDIA" component={Link} to="/media" /> */}
