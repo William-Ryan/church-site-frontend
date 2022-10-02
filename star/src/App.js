@@ -10,8 +10,8 @@ import Media from "./Components/Media.jsx"
 import Events from "./Components/Events.jsx"
 import Contact from "./Components/Contact.jsx"
 
-import { makeStyles } from '@material-ui/core/styles';
-import Paper from '@material-ui/core/Paper';
+import { makeStyles } from '@mui/material/styles';
+import Paper from '@mui/material/Paper';
 
 function App() {
   return (

@@ -1,19 +1,10 @@
 import React from "react"
 import {Link} from "react-router-dom"
-import { makeStyles } from '@material-ui/core/styles';
-import AppBar from '@material-ui/core/AppBar';
-import Tabs from '@material-ui/core/Tabs';
-import Tab from '@material-ui/core/Tab';
-
-const useStyles = makeStyles((theme) => ({
-  root: {
-    flexGrow: 1,
-    backgroundColor: theme.palette.background.paper,
-  },
-}));
+import AppBar from '@mui/material/AppBar';
+import Tabs from '@mui/material/Tabs';
+import Tab from '@mui/material/Tab';
 
 export default function Navigation() {
-  const classes = useStyles();
   const [value, setValue] = React.useState(0);
 
   const handleChange = (event, newValue) => {
@@ -21,7 +12,7 @@ export default function Navigation() {
   };
 
   return (
-    <div className={classes.root}>
+    <div>
       <AppBar position="static">
         <Tabs
           variant="fullWidth"

@@ -1,43 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-
-import { makeStyles, createMuiTheme, ThemeProvider } from '@material-ui/core/styles';
-import Typography from '@material-ui/core/Typography';
-import Button from '@material-ui/core/Button';
-
-// const useStyles = makeStyles(() => ({
-//     body1: {
-//         display: 'flex',
-//         flexDirection: 'row-reverse',
-//         justifyContent: 'center',
-//         alignItems: 'center',
-//         textAlign: 'center',
-//         backgroundImage: `url(${Image})`,
-//         backgroundSize: '100% 220%',
-//         backgroundPosition: 'center center',
-//         backgroundRepeat: 'no-repeat'
-//     },
-//     body2: {
-//         margin: '15% 41% 10% 5%',
-//     },
-//     profile: {
-//         height: '24rem',
-//         maxWidth: '100%'
-//     }
-// }))
-
+import Typography from '@mui/material/Typography';
+import Button from '@mui/material/Button';
 
 
 const Home = () => {
-    // const classes = useStyles();
-    const theme = createMuiTheme({
-        typography: {
-            fontFamily: 'sans-serif',
-        }
-    })
     return (
-        <ThemeProvider theme={theme}>
-            <div theme={theme}>
+            <div>
                 <div>
                     <Typography variant={"h4"}>
                         Who is Star Of Hope Chapel?
@@ -82,7 +51,6 @@ const Home = () => {
                     </Typography>
                 </div>
             </div>
-        </ThemeProvider>
     )
 }
 
