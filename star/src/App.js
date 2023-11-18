@@ -1,5 +1,5 @@
 import React from 'react';
-import { Route, Switch } from "react-router-dom"
+import { Route, Routes } from "react-router-dom"
 
 import TitleBar from "./Components/TitleBar.jsx"
 import Navigation from "./Components/Navigation.jsx"
@@ -18,14 +18,14 @@ function App() {
     <div className="App">
       <TitleBar />
       <Navigation />
-      <Switch>
-        <Route exact path='/' component={Home}/>
-        <Route exact path='/about' component={About}/>
-        {/* <Route exact path='/stream' component={Stream}/> */}
-        {/* <Route exact path='/media' component={Media}/> */}
-        <Route exact path='/events' component={Events}/>
-        <Route exact path='/contact' component={Contact}/>
-      </Switch>
+      <Routes>
+        <Route exact path='/' element={<Home />}/>
+        <Route exact path='/about' element={<About />}/>
+        {/* <Route exact path='/stream' element={Stream}/> */}
+        {/* <Route exact path='/media' element={Media}/> */}
+        <Route exact path='/events' element={<Events />}/>
+        <Route exact path='/contact' element={<Contact />}/>
+      </Routes>
     </div>
   );
 }

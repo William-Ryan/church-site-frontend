@@ -22,7 +22,7 @@ export default function Navigation() {
           aria-label="nav tabs"
           indicatorColor="primary"
           centered={true}
-          style={{ backgroundColor: "yellowgreen"}}
+          style={{ backgroundColor: "gold", padding:"0.3% 8%"}}
         >
           <Tab  label="HOME" component={Link} to="/" />
           <Tab label="ABOUT US" component={Link} to="/about" />

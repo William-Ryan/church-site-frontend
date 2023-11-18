@@ -6,19 +6,21 @@ import Typography from '@mui/material/Typography';
 import styled from '@emotion/styled'
 
 const Img = styled.img`
-    width: 15%`
+    width: 10%`
 
 const TitleBar = () => {
     return (
-        <div>
+        <div style={{ backgroundColor: "antiquewhite", padding:"0% 0% 0.5%"}}>
             <div>
                 <Img 
-                src="https://scontent-lga3-2.xx.fbcdn.net/v/t39.30808-6/308787210_457577689737886_6832976261704682608_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=IcmQKIGaQmIAX9yUSMP&_nc_ht=scontent-lga3-2.xx&oh=00_AT--JjGLTckMkTwGuV7cV5QXgcI7LsrGCTMEE_jG6RpEXQ&oe=633D5E96"
+                src="https://scontent-iad3-2.xx.fbcdn.net/v/t39.30808-6/308787210_457577689737886_6832976261704682608_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=5f2048&_nc_ohc=_I06z0eNpEkAX-LMOmU&_nc_ht=scontent-iad3-2.xx&oh=00_AfCXhYJJqvKPW91EYLGJsnNDd1MfsDyhvK2BSZOG8koHkw&oe=655D3156"
                 alt="Star with middle cross"/>
             </div>
-            <Typography variant={"h1"}>
-                Star Of Hope Chapel
-            </Typography>
+            <div>
+                <Typography variant={"h1"} style={{ fontFamily: "serif", textDecoration: "underline", textShadow: "gold -2px 0px", color: "darkkhaki", fontSize: "5rem"}}>
+                    Star Of Hope Chapel
+                </Typography>
+            </div>
         </div>
     )
 }
