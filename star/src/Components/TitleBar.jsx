@@ -10,7 +10,7 @@ const Img = styled.img`
 
 const TitleBar = () => {
     return (
-        <div style={{ backgroundColor: "antiquewhite", padding:"0% 0% 0.5%"}}>
+        <div style={{ background: "linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(217,246,177,1) 8%, rgba(207,185,16,1) 100%)", padding:"0% 0% 0.5%"}}>
             <div>
                 <Img 
                 src="https://scontent-iad3-2.xx.fbcdn.net/v/t39.30808-6/308787210_457577689737886_6832976261704682608_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=5f2048&_nc_ohc=_I06z0eNpEkAX-LMOmU&_nc_ht=scontent-iad3-2.xx&oh=00_AfCXhYJJqvKPW91EYLGJsnNDd1MfsDyhvK2BSZOG8koHkw&oe=655D3156"
