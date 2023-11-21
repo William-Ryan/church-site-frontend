@@ -29,12 +29,9 @@ const Home = () => {
     ]
 
     return (
-            <div style={{ background: "linear-gradient(90deg, rgba(205,244,0,1) 0%, rgba(130,255,231,1) 50%, rgba(205,244,0,1) 84%)" }}>
+            <div style={{ }}>
                 <div>
-                    <Typography variant={"h4"} style={{ textAlign: "center", padding: "1% 0%", fontFamily: "monospace", fontWeight: "bold", color: "lightseagreen" }}>
-                        Who is Star Of Hope Chapel?
-                    </Typography>
-                    <div>
+                    <div style={{ width: "30%", margin: "0% auto 0% 60%", opacity: "70%" }}>
                         <Carousel style={{ margin: "0% 0% 1%" }}>
                             {
                                 pics.map( (pic, i) => <Pic key={i} pic={pic} /> )
@@ -84,16 +81,13 @@ const Home = () => {
     function Pic(props)
     {
         return (
-            <Paper style={{ background: "linear-gradient(90deg, rgba(205,244,0,1) 0%, rgba(130,255,231,1) 50%, rgba(205,244,0,1) 84%)", textAlign: "center", padding: "0% 0% 2%"}}>
+            <Paper style={{ textAlign: "center", padding: "0% 0% 2%"}}>
                 <h6>{props.pic.label}</h6>
                 <img
                     src={props.pic.img}
                     alt={props.pic.alt}
                     style={{ height: "16rem", width: "16rem", marginLeft: "auto", marginRight: "auto"}}
                 />
-                <div>
-                    <Button>Swipe Me</Button>
-                </div>
             </Paper>
         )
     }
