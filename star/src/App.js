@@ -14,7 +14,7 @@ import Paper from '@mui/material/Paper';
 
 function App() {
   return (
-    <div className="App" style={{ backgroundImage: "url(https://scontent-iad3-2.xx.fbcdn.net/v/t39.30808-6/308787210_457577689737886_6832976261704682608_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=5f2048&_nc_ohc=_I06z0eNpEkAX-LMOmU&_nc_ht=scontent-iad3-2.xx&oh=00_AfCXhYJJqvKPW91EYLGJsnNDd1MfsDyhvK2BSZOG8koHkw&oe=655D3156)", backgroundRepeat: "no-repeat", backgroundSize: "contain", backgroundPosition: "center"}}>
+    <div className="App">
       <Navigation />
       <Routes>
         <Route exact path='/' element={<Home />}/>

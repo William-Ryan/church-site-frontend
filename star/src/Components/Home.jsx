@@ -29,51 +29,27 @@ const Home = () => {
     ]
 
     return (
-            <div style={{ }}>
+            <div style={{ backgroundImage: "url(https://scontent-iad3-2.xx.fbcdn.net/v/t39.30808-6/308787210_457577689737886_6832976261704682608_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=5f2048&_nc_ohc=5jo5PxPBv8MAX8ZJWsR&_nc_ht=scontent-iad3-2.xx&oh=00_AfA6j9bF3xhF0zyoI0z3-NfPjnw9MydGskVB2WMxnJ9fqw&oe=65671496)", backgroundRepeat: "no-repeat", backgroundSize: "22%", backgroundPosition: "center"}}>
                 <div>
-                    <div style={{ width: "30%", margin: "0% auto 0% 60%", opacity: "70%" }}>
+                    <div style={{ width: "30%", margin: "0% auto 0% 64%", opacity: "70%" }}>
                         <Carousel style={{ margin: "0% 0% 1%" }}>
                             {
                                 pics.map( (pic, i) => <Pic key={i} pic={pic} /> )
                             }
                         </Carousel>
                     </div>
-                    <Typography variant={"body1"}>
-                        Hello, Brothers and Sisters. Our loving church has recently celebrated 50 years together in fellowship with our Lord God. We are blessed to have our church family to gather together and spread the good word!
-                    </Typography>
+                    <div>
+                        <Typography variant={"body1"} style={{ width: "29%", fontSize: "3.5rem", margin: "1% 0% 1%"}}>
+                            To God Be The Glory
+                        </Typography>
+                    </div>
                 </div>
                 <div>
-                    <Typography variant={"h4"}>
+                    <Typography variant={"h4"} style={{ fontSize: "4rem", textAlign: "center", margin: "2% 0% 0%"}}>
                         Daily Scripture
                     </Typography>
-                    <Typography variant={"body1"}>
-                        Mark 10:9: Therefore what God has joined together, let no one separate.
-                    </Typography>
-                </div>
-                <div>
-                    <Typography variant={"h4"}>
-                        Our Congregation
-                    </Typography>
-                    <Typography variant={"body1"}>
-                        Lead Members of the church ^
-                    </Typography>
-                    <Button>Meet Our Members</Button>
-                </div>
-                {/* <div>
-                    <Typography variant={"h4"}>
-                        Church Media
-                    </Typography>
-                    <Typography variant={"body1"}>
-                        Media of different church events ^
-                    </Typography>
-                    <Button>Church Memories</Button>
-                </div> */}
-                <div>
-                    <Typography variant={"h4"}>
-                        Contact Us
-                    </Typography>
-                    <Typography>
-                        If you need our location or wish to get in touch with us click the contact tab for information!
+                    <Typography variant={"body1"} style={{ textAlign: "center", fontSize: "2rem", fontStyle: "italic"}}>
+                    2 Corinthians 4:16-18 ~ So we do not lose heart. Though our outer self is wasting away, our inner self is being renewed day by day. For this light momentary affliction is preparing for us an eternal weight of glory beyond all comparison, as we look not to the things that are seen but to the things that are unseen. For the things that are seen are transient, but the things that are unseen are eternal.
                     </Typography>
                 </div>
             </div>
@@ -86,7 +62,7 @@ const Home = () => {
                 <img
                     src={props.pic.img}
                     alt={props.pic.alt}
-                    style={{ height: "16rem", width: "16rem", marginLeft: "auto", marginRight: "auto"}}
+                    style={{ height: "16rem", width: "16rem", marginLeft: "auto", marginRight: "auto", borderRadius: "33%"}}
                 />
             </Paper>
         )

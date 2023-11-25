@@ -14,9 +14,9 @@ export default function Navigation() {
   };
 
   return (
-    <div style={{ display: "flex", padding: "0% 0% 0.5% 0%", backgroundColor: "grey"}}>
+    <div style={{ display: "flex", padding: "0% 0% 0.5% 0%", backgroundColor: "black"}}>
       <div style={{ width: "27%"}}>
-            <Typography variant={"h1"} style={{  textShadow: "darkred -2px 0px", color: "red", fontSize: "1.5rem", margin: "2% 0% 0% 2%"}}>
+            <Typography variant={"h1"} style={{ color: "deepskyblue", fontSize: "2rem", margin: "3% 0% 0% 2%"}}>
                 Star Of Hope Chapel
             </Typography>
       </div>
@@ -27,16 +27,16 @@ export default function Navigation() {
           value={value}
           onChange={handleChange}
           aria-label="nav tabs"
-          indicatorColor="primary"
+          indicatorColor="secondary"
           centered={true}
-          style={{ borderRadius: "3%", backgroundColor: "antiquewhite", width: "100%"}}
+          style={{ borderRadius: "3%", backgroundColor: "lightslategray", width: "100%"}}
         >
-          <Tab  label="HOME" component={Link} to="/" />
-          <Tab label="ABOUT US" component={Link} to="/about" />
+          <Tab style={{ color: "blueviolet", fontSize: "1.7rem", fontWeight: "bold" }} label="HOME" component={Link} to="/" />
+          <Tab style={{ color: "blueviolet", fontSize: "1.7rem", fontWeight: "bold" }} label="ABOUT US" component={Link} to="/about" />
           {/* <Tab label="LIVE STREAM" component={Link} to="/stream" /> */}
           {/* <Tab label="MEDIA" component={Link} to="/media" /> */}
-          <Tab label="EVENTS" component={Link} to="/events" />
-          <Tab label="CONTACT" component={Link} to="/contact" />
+          <Tab style={{ color: "blueviolet", fontSize: "1.7rem", fontWeight: "bold" }} label="EVENTS" component={Link} to="/events" />
+          <Tab style={{ color: "blueviolet", fontSize: "1.7rem", fontWeight: "bold" }} label="CONTACT" component={Link} to="/contact" />
         </Tabs>
       </AppBar>
       </div>
