@@ -10,7 +10,10 @@ const Events = () => {
                 <Typography variant={"h3"}>Events At Star Of Hope Chapel</Typography>
             </div>
             <div>
-                <Typography>2024-2025</Typography>
+                <Typography style={{ textAlign: "center", fontSize: "4rem", fontWeight: "bold", color: "midnightblue"}}>2024-2025</Typography>
+            </div>
+            <div>
+                <Typography style={{ fontSize: "2.5rem", textAlign: "center", color: "blueviolet", fontStyle: "italic", textDecoration: "underline"}}>To Be Added Soon!</Typography>
             </div>
         </div>
     )
