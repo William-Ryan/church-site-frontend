@@ -29,7 +29,7 @@ const Home = () => {
     ]
 
     return (
-            <div style={{ backgroundImage: "url(https://scontent-iad3-2.xx.fbcdn.net/v/t39.30808-6/308787210_457577689737886_6832976261704682608_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=5f2048&_nc_ohc=5jo5PxPBv8MAX8ZJWsR&_nc_ht=scontent-iad3-2.xx&oh=00_AfA6j9bF3xhF0zyoI0z3-NfPjnw9MydGskVB2WMxnJ9fqw&oe=65671496)", backgroundRepeat: "no-repeat", backgroundSize: "22%", backgroundPosition: "center"}}>
+            <div style={{ backgroundImage: "url(https://res.cloudinary.com/dmtkcjrqv/image/upload/v1701563652/Star_background_adbxe4.jpg)", backgroundRepeat: "no-repeat", backgroundSize: "22%", backgroundPosition: "center"}}>
                 <div>
                     <div style={{ width: "30%", margin: "0% auto 0% 64%", opacity: "70%" }}>
                         <Carousel style={{ margin: "0% 0% 1%" }}>
