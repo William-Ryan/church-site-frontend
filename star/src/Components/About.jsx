@@ -52,7 +52,7 @@ const About = () => {
                         Sara Ryan
                     </Typography>
                     <img
-                    src="https://scontent-iad3-1.xx.fbcdn.net/v/t39.30808-6/401777823_3305880136222189_9027090538550564584_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=5f2048&_nc_ohc=5nvpi-fdTWUAX-h8QBa&_nc_ht=scontent-iad3-1.xx&oh=00_AfAImPkq1Qj2oQ3NlQjo4t_cniuUZ__maSodp211EQmHrg&oe=65672856"
+                    src="https://res.cloudinary.com/dmtkcjrqv/image/upload/v1701564811/401777823_3305880136222189_9027090538550564584_n_xvgaar.jpg"
                     alt="Youth teacher Sara Ryan"
                     style={{ height: "16rem", borderRadius: "200px" }}
                     />
