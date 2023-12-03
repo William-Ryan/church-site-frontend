@@ -79,7 +79,7 @@ const About = () => {
                     We believe in the verbal inspiration of the 66 books of the Bible in its original writings and that it is without error and is the sole authority in all matters of faith and practice.
                 </Typography>
                 <Typography style={{ textIndent: "2%", margin: "1% 0%", fontSize: "1.4rem" }}>
-                    We believe there is only one true God, existing in three Persons, Father, Son and Holy personalities but of one essence
+                    We believe there is only one true God, existing in three Persons, Father, Son and Holy Spirit. These three are co-eternal and co-equal from all eternity, each with distinct personalities but of one essence.
                 </Typography>
                 <Typography style={{ textIndent: "2%", margin: "1% 0%", fontSize: "1.4rem" }}>
                     We believe that Adam was created without sin but fell by disobedience and thus the whole race fell and is by nature spiritually dead and lost.
