@@ -35,9 +35,8 @@ const Contact = () => {
                         Contact Us
                     </Typography>
                     <ListContainer>
-                        <li>Address: 233 W Artisan St, Williamsport, MD </li>
+                        <li>Address: 22 S Artisan St, Williamsport, MD </li>
                         <li>Number: 240-520-7202 </li>
-                        <li>Email: church@gmail.com </li>
                     </ListContainer>
                 </CardContent>
             </ContactCard>
