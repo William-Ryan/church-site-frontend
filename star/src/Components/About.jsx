@@ -1,6 +1,15 @@
 import React from 'react';
 
 import Typography from '@mui/material/Typography';
+import { styled } from '@mui/material/styles'
+
+const ProfilePic = styled('img')(({theme}) => ({
+    height: "16rem", 
+    borderRadius: "200px",
+    [theme.breakpoints.down('sm')]: {
+        height: "10rem"
+      }
+  }))
 
 const About = () => {
     return (
@@ -18,10 +27,9 @@ const About = () => {
                     <Typography>
                         Douglas Forsythe
                     </Typography>
-                    <img
+                    <ProfilePic
                     src="https://scontent-iad3-1.xx.fbcdn.net/v/t1.18169-9/12241269_944206678987806_3919504221901055643_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=7a1959&_nc_ohc=bcm0ec6hLW8AX_CV4vI&_nc_ht=scontent-iad3-1.xx&oh=00_AfBvzJ4Fi94GIgcKtYOx5Q5W_pa3KX0k49rxDFrmlbp7sg&oe=6589B800"
                     alt="Pastor Doug Forsythe"
-                    style={{ height: "16rem", borderRadius: "200px" }}
                     />
                 </div>
                 <div>
@@ -31,10 +39,9 @@ const About = () => {
                     <Typography>
                         Margaret Forsythe
                     </Typography>
-                    <img
+                    <ProfilePic
                     src="https://scontent-iad3-2.xx.fbcdn.net/v/t31.18172-8/1269299_304274473045283_1904230210_o.jpg?_nc_cat=100&ccb=1-7&_nc_sid=dd63ad&_nc_ohc=_qwtMzRKE_IAX_HcaOT&_nc_ht=scontent-iad3-2.xx&oh=00_AfANQsWGoujgpyOESD8dZg0PTgsySAq0II9vOXAQ-vatMw&oe=6589CEE3"
                     alt="Youth Leader Margaret Forsythe"
-                    style={{ height: "16rem", borderRadius: "200px" }}
                     />
                 </div>
             </div>
@@ -51,10 +58,9 @@ const About = () => {
                     <Typography>
                         Sara Ryan
                     </Typography>
-                    <img
+                    <ProfilePic
                     src="https://res.cloudinary.com/dmtkcjrqv/image/upload/v1701564811/401777823_3305880136222189_9027090538550564584_n_xvgaar.jpg"
                     alt="Youth teacher Sara Ryan"
-                    style={{ height: "16rem", borderRadius: "200px" }}
                     />
                 </div>
                 <div>
@@ -64,10 +70,9 @@ const About = () => {
                     <Typography>
                         Marcia Mose
                     </Typography>
-                    <img
+                    <ProfilePic
                     src="https://scontent-iad3-2.xx.fbcdn.net/v/t1.6435-9/71012612_2407687989307290_629147850562863104_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=dd63ad&_nc_ohc=CmcfM-6ln08AX8K1lmq&_nc_ht=scontent-iad3-2.xx&oh=00_AfDj7S2aoJNaZIJfSOgs1K6gpnS-YrTo7Ol6HHtIDb2XQA&oe=658A4D18"
                     alt="Youth teacher Marcia Mose"
-                    style={{ height: "16rem", borderRadius: "200px" }}
                     />
                 </div>
             </div>

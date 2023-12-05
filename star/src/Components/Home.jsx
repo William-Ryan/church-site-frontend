@@ -3,6 +3,35 @@ import { Link } from 'react-router-dom';
 import Typography from '@mui/material/Typography';
 import { Paper, Button } from '@mui/material';
 import Carousel from 'react-material-ui-carousel';
+import { styled } from '@mui/material/styles'
+
+const CaroContainer = styled('div')(({theme}) => ({
+    width: "30%", 
+    margin: "0% auto 0% 64%", 
+    opacity: "70%",
+    [theme.breakpoints.down('md')]: {
+        margin: "0% auto 0%"
+    },
+    [theme.breakpoints.down('sm')]: {
+        width: "70%"
+      }
+  }))
+
+const CaroImg = styled('img')(({theme}) => ({
+    height: "16rem", 
+    width: "16rem", 
+    marginLeft: "auto", 
+    marginRight: "auto", 
+    borderRadius: "33%",
+  [theme.breakpoints.down('md')]: {
+    height: "11rem", 
+    width: "11rem"
+  },
+  [theme.breakpoints.down('sm')]: {
+    height: "8rem", 
+    width: "8rem"
+  }
+}))
 
 const Home = () => {
     const pics = [
@@ -31,13 +60,13 @@ const Home = () => {
     return (
             <div style={{ backgroundImage: "url(https://res.cloudinary.com/dmtkcjrqv/image/upload/v1701563652/Star_background_adbxe4.jpg)", backgroundRepeat: "no-repeat", backgroundSize: "22%", backgroundPosition: "center"}}>
                 <div>
-                    <div style={{ width: "30%", margin: "0% auto 0% 64%", opacity: "70%" }}>
+                    <CaroContainer>
                         <Carousel style={{ margin: "0% 0% 1%" }}>
                             {
                                 pics.map( (pic, i) => <Pic key={i} pic={pic} /> )
                             }
                         </Carousel>
-                    </div>
+                    </CaroContainer>
                     <div>
                         <Typography variant={"body1"} style={{ width: "29%", fontSize: "3.5rem", margin: "1% 0% 1%"}}>
                             To God Be The Glory
@@ -59,10 +88,9 @@ const Home = () => {
         return (
             <Paper style={{ textAlign: "center", padding: "0% 0% 2%"}}>
                 <h6>{props.pic.label}</h6>
-                <img
+                <CaroImg
                     src={props.pic.img}
                     alt={props.pic.alt}
-                    style={{ height: "16rem", width: "16rem", marginLeft: "auto", marginRight: "auto", borderRadius: "33%"}}
                 />
             </Paper>
         )
