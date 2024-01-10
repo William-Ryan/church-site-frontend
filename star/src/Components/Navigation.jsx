@@ -76,7 +76,7 @@ export default function Navigation() {
       </div>
       <ImageContainer>
           <ChurchImg 
-          src="https://scontent-iad3-1.xx.fbcdn.net/v/t1.18169-9/10624727_710356892396045_1093676820065097135_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=2be8e3&_nc_ohc=C-jK4jwVivMAX-oC_aJ&_nc_ht=scontent-iad3-1.xx&oh=00_AfD_avYfjvBZ-ubP_kAVZGcypadFvq5uQOxFvFUkRQPrAg&oe=658321CC"
+          src="https://res.cloudinary.com/dmtkcjrqv/image/upload/v1704920910/10624727_710356892396045_1093676820065097135_n_febr92.jpg"
           alt="Star Of Hope Church when first built"
           />
       </ImageContainer>
